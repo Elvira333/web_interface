@@ -1,0 +1,54 @@
+2023-12-21 16:13:06.578  INFO 4980 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 4980 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:13:06.580  INFO 4980 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:13:07.306  INFO 4980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:13:07.312  INFO 4980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:13:07.313  INFO 4980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:13:07.415  INFO 4980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:13:07.415  INFO 4980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+2023-12-21 16:13:08.547  INFO 4980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:13:08.559  INFO 4980 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.235 seconds (JVM running for 2.783)
+2023-12-21 16:13:44.120  INFO 22900 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 22900 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:13:44.125  INFO 22900 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:13:44.852  INFO 22900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:13:44.859  INFO 22900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:13:44.862  INFO 22900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:13:44.962  INFO 22900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:13:44.962  INFO 22900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2023-12-21 16:13:46.104  INFO 22900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:13:46.116  INFO 22900 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.244 seconds (JVM running for 2.792)
+2023-12-21 16:14:36.218  INFO 22068 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 22068 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:14:36.220  INFO 22068 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:14:36.959  INFO 22068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:14:36.971  INFO 22068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:14:36.972  INFO 22068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:14:37.072  INFO 22068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:14:37.072  INFO 22068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2023-12-21 16:14:38.199  INFO 22068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:14:38.212  INFO 22068 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.257 seconds (JVM running for 2.824)
+2023-12-21 16:22:03.876  INFO 1056 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 1056 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:22:03.878  INFO 1056 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:22:04.623  INFO 1056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:22:04.632  INFO 1056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:22:04.633  INFO 1056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:22:04.727  INFO 1056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:22:04.728  INFO 1056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2023-12-21 16:22:05.892  INFO 1056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:22:05.904  INFO 1056 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.292 seconds (JVM running for 2.874)
+2023-12-21 16:22:53.210  INFO 18408 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 18408 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:22:53.213  INFO 18408 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:22:53.951  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:22:53.963  INFO 18408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:22:53.964  INFO 18408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:22:54.059  INFO 18408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:22:54.059  INFO 18408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 813 ms
+2023-12-21 16:22:55.722  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:22:55.735  INFO 18408 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.77 seconds (JVM running for 3.388)
+2023-12-21 16:23:23.467  INFO 13580 --- [main] o.o.OpenApiGeneratorApplication          : Starting OpenApiGeneratorApplication using Java 17.0.9 on EAnnaeva with PID 13580 (C:\Users\Eannaeva\Work\web_interface\target\classes started by EAnnaeva in C:\Users\Eannaeva\Work\web_interface)
+2023-12-21 16:23:23.469  INFO 13580 --- [main] o.o.OpenApiGeneratorApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-12-21 16:23:24.194  INFO 13580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-21 16:23:24.199  INFO 13580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-21 16:23:24.202  INFO 13580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-12-21 16:23:24.301  INFO 13580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-21 16:23:24.302  INFO 13580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 803 ms
+2023-12-21 16:23:25.439  INFO 13580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-21 16:23:25.453  INFO 13580 --- [main] o.o.OpenApiGeneratorApplication          : Started OpenApiGeneratorApplication in 2.244 seconds (JVM running for 2.829)
