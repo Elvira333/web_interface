@@ -1,6 +1,31 @@
 <configuration>
-    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <appender name="STDOUT_FILE" class="org.springframework.boot.logging.logback.core.FileAppender">
+        <file>stdout.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <filter class="org.springframework.boot.logging.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+    <appender name="STDERR_FILE" class="org.springframework.boot.logging.logback.core.FileAppender">
+    <file>stderr.log</file>
+    <encoder>
+        <pattern>%d{HH:mm:ss.SSS} [thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+        <filter class="org.springframework.boot.logging.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+<!--    <appender name="STDOUT" class="org.springframework.boot.logging.logback.LogbackLoggingSystem">-->
 
-    <logger name="org.openapitools" level="debug"/>
-
+<!--    </appender>-->
+    <root level="debug">
+        <appender-ref ref="STDERR_FILE" level="error" />
+        <appender-ref ref="STDOUT_FILE" level="info" />
+    </root>
 </configuration>

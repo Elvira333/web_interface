@@ -7,8 +7,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.Singular;
 import lombok.experimental.Accessors;
 
 
@@ -193,7 +195,7 @@ public class Student {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, login, firstName, middleName, lastName, age, subjects);
+    return Objects.hash(id, login, firstName, middleName, lastName, age);
   }
 
   @Override

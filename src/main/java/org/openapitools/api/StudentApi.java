@@ -5,6 +5,7 @@
  */
 package org.openapitools.api;
 
+import lombok.extern.slf4j.Slf4j;
 import org.openapitools.model.Error;
 import org.openapitools.model.Student;
 import io.swagger.v3.oas.annotations.Operation;
