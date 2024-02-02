@@ -1,26 +1,24 @@
 package org.openapitools.service;
 
 import lombok.NonNull;
-import org.openapitools.controller.CreateStudentRequest;
-import org.openapitools.controller.StudentResponse;
+import org.openapitools.model.Student;
 
 import java.util.List;
 
 public interface StudentService {
 
     @NonNull
-    List<StudentResponse> findAll();
+    List<Student> findAll();
 
     @NonNull
-    StudentResponse findById(@NonNull Long studentId);
+    Student findById(@NonNull Long studentId);
 
     @NonNull
-    StudentResponse createStudent(@NonNull CreateStudentRequest request);
+    Student create(@NonNull Student request);
 
     @NonNull
-    StudentResponse update(@NonNull Long studentId, @NonNull CreateStudentRequest request);
+    Student update(@NonNull Long studentId, @NonNull Student request);
 
-    @NonNull
     void delete(@NonNull Long studentId);
 
 }

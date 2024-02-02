@@ -7,10 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.Singular;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 
@@ -19,35 +16,31 @@ import javax.annotation.Generated;
 /**
  * Student
  */
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Accessors(chain = true)
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-12-19T12:57:30.274029200+03:00[Europe/Moscow]")
 public class Student {
-
   private Long id;
-
   private String login;
 
-  private String firstName;
+  private String name;
 
-  private String middleName;
-
-  private String lastName;
+  private String surname;
 
   private Integer age;
 
   private Set<Subject> subjects;
 
-  public Student() {
-    super();
-  }
-
   /**
    * Constructor with only required parameters
    */
-  public Student(String login, String firstName, String middleName, Integer age, Set<Subject> subjects) {
+  public Student(String login, String name, String surname, Integer age, Set<Subject> subjects) {
     this.login = login;
-    this.firstName = firstName;
-    this.middleName = middleName;
+    this.name = name;
+    this.surname = surname;
     this.age = age;
     this.subjects = subjects;
   }
@@ -92,8 +85,8 @@ public class Student {
     this.login = login;
   }
 
-  public Student firstName(String firstName) {
-    this.firstName = firstName;
+  public Student name(String name) {
+    this.name = name;
     return this;
   }
 
@@ -102,54 +95,35 @@ public class Student {
    * @return firstName
   */
   @NotNull 
-  @Schema(name = "firstName", example = "Ivan", requiredMode = Schema.RequiredMode.REQUIRED)
-  @JsonProperty("firstName")
-  public String getFirstName() {
-    return firstName;
+  @Schema(name = "name", example = "Ivan", requiredMode = Schema.RequiredMode.REQUIRED)
+  @JsonProperty("name")
+  public String getName() {
+    return name;
   }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
+  public void setName(String firstName) {
+    this.name = name;
   }
 
-  public Student middleName(String middleName) {
-    this.middleName = middleName;
+
+  public Student surName(String surName) {
+    this.surname = surName;
     return this;
   }
 
   /**
-   * Get middleName
-   * @return middleName
-  */
-  @NotNull 
-  @Schema(name = "middleName", example = "Ivanovich", requiredMode = Schema.RequiredMode.REQUIRED)
-  @JsonProperty("middleName")
-  public String getMiddleName() {
-    return middleName;
-  }
-
-  public void setMiddleName(String middleName) {
-    this.middleName = middleName;
-  }
-
-  public Student lastName(String lastName) {
-    this.lastName = lastName;
-    return this;
-  }
-
-  /**
-   * Get lastName
-   * @return lastName
+   * Get surName
+   * @return surName
   */
   
-  @Schema(name = "lastName", example = "Ivanov", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
-  @JsonProperty("lastName")
-  public String getLastName() {
-    return lastName;
+  @Schema(name = "surName", example = "Ivanov", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @JsonProperty("surName")
+  public String getSurname() {
+    return surname;
   }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
+  public void setSurname(String lastName) {
+    this.surname = surname;
   }
 
   public Student age(Integer age) {
@@ -183,9 +157,8 @@ public class Student {
     Student student = (Student) o;
     return Objects.equals(this.id, student.id) &&
         Objects.equals(this.login, student.login) &&
-        Objects.equals(this.firstName, student.firstName) &&
-        Objects.equals(this.middleName, student.middleName) &&
-        Objects.equals(this.lastName, student.lastName) &&
+        Objects.equals(this.name, student.name) &&
+        Objects.equals(this.surname, student.surname) &&
         Objects.equals(this.age, student.age);
   }
  public Student subjects() {
@@ -195,7 +168,7 @@ public class Student {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, login, firstName, middleName, lastName, age);
+    return Objects.hash(id, login, name, surname, age);
   }
 
   @Override
@@ -204,9 +177,8 @@ public class Student {
     sb.append("class Student {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    login: ").append(toIndentedString(login)).append("\n");
-    sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
-    sb.append("    middleName: ").append(toIndentedString(middleName)).append("\n");
-    sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
+    sb.append("    firstName: ").append(toIndentedString(name)).append("\n");
+    sb.append("    middleName: ").append(toIndentedString(surname)).append("\n");
     sb.append("    age: ").append(toIndentedString(age)).append("\n");
     sb.append("    subjects: ").append(toIndentedString(subjects)).append("\n");
     sb.append("}");

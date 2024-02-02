@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.*;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
 
@@ -13,6 +17,10 @@ import javax.annotation.Generated;
 /**
  * Subject
  */
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Accessors(chain = true)
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-12-19T12:57:30.274029200+03:00[Europe/Moscow]")
 public class Subject {
@@ -20,10 +28,6 @@ public class Subject {
   private Long id;
 
   private String name;
-
-  public Subject() {
-    super();
-  }
 
   /**
    * Constructor with only required parameters
