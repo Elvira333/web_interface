@@ -1,6 +1,6 @@
-# Веб-интерфейс MyMicroservice
+# Веб-интерфейс StudentServiceUI
 
-Добро пожаловать в компонент веб-интерфейса MyMicroservice, части нашей микросервисной архитектуры. Этот модуль отвечает за взаимодействие с фронтендом, обеспечивая безупречный пользовательский опыт. Ниже вы найдете ключевую информацию о данном модуле.
+Добро пожаловать в компонент веб-интерфейса StudentServiceUI, части нашей микросервисной архитектуры. Этот модуль отвечает за взаимодействие с фронтендом, обеспечивая безупречный пользовательский опыт. Ниже вы найдете ключевую информацию о данном модуле.
 
 ## Обзор
 
@@ -14,7 +14,7 @@
 
 - Документация Swagger: Изучите документацию API через Swagger UI по адресу [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html).
 
-- Интеграция с очередью сообщений: Используйте RabbitMQ для асинхронного обмена информацией. Сообщения, отправленные в RabbitMQ, обрабатываются и направляются в другое приложение в нашей микросервисной архитектуре, обеспечивая эффективный поток данных.
+- Интеграция с Apache Kafka: Используйте Apache Kafka для асинхронного обмена информацией. Сообщения, отправленные в Kafka, обрабатываются и направляются в другое приложение в нашей микросервисной архитектуре, обеспечивая эффективный поток данных.
 
 ## Начало работы
 
@@ -37,10 +37,7 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSou
 spring.jackson.date-format=org.openapitools.RFC3339DateFormat
 spring.jackson.serialization.write-dates-as-timestamps=false
 
-spring.rabbitmq.host=localhost
-spring.rabbitmq.port=15672
-spring.rabbitmq.username=guest
-spring.rabbitmq.password=guest
+spring.kafka.bootstrap-servers=localhost:9092
 ```
 Не стесняйтесь изменять эти свойства в соответствии с вашим окружением и требованиями.
 

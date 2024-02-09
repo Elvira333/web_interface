@@ -4,50 +4,55 @@ import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.openapitools.model.Student;
-import org.springframework.amqp.core.MessagePostProcessor;
+import org.openapitools.model.Subject;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
 @Service
 @AllArgsConstructor
 @Slf4j
 public class StudentServiceImpl implements StudentService {
-
-    private final RabbitTemplate rabbitTemplate;
+    private final List<Student> message = new ArrayList<>();
     @Override
-    public @NonNull List<Student> findAll() {
+    public @NonNull Optional<Student> findAll() {
         log.info("find all method called");
-        rabbitTemplate.convertAndSend("exchangeName", "findAllStudentsRoutingKey", "");
-        return Collections.emptyList();
+
+        return Optional.of((Student) message);
     }
 
     @Override
-    public @NonNull Student findById(@NonNull Long studentId) {
+    public @NonNull Optional<Student> findById(@NonNull Long studentId) {
         log.info("findById method called");
-        rabbitTemplate.convertAndSend("exchangeName", "findStudentByIdRoutingKey", studentId.toString());
-        return new Student();
+
+        return message.stream().filter(it -> it.getId().equals(studentId)).findFirst();
     }
 
     @Override
-    public @NonNull Student create(@NonNull Student request) {
+    public void create(@NonNull Student student) {
         log.info("createStudent method called");
-        rabbitTemplate.convertAndSend("exchangeName", "createStudentRoutingKey", request);
-        return new Student();
+        message.add(student);
+
     }
 
     @Override
     public @NonNull Student update(@NonNull Long studentId, @NonNull Student request) {
         log.info("update method called");
-        rabbitTemplate.convertAndSend("exchangeName", "updateStudentRoutingKey", studentId.toString(), (MessagePostProcessor) request);
-        return new Student();
+        Student updateStudent = findById(studentId).orElseThrow(()-> new RuntimeException("Student not found with id: " + studentId));
+        updateStudent.setName(request.getName());
+        updateStudent.setSurname(request.getSurname());
+        updateStudent.setAge(request.getAge());
+
+        return updateStudent;
     }
 
     @Override
     public void delete(@NonNull Long studentId) {
         log.info("delete method called");
-        rabbitTemplate.convertAndSend("exchangeName", "deleteStudentRoutingKey", studentId.toString());
+        message.removeIf(student -> student.getId().equals(studentId));
     }
 }

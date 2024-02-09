@@ -159,7 +159,8 @@ public class Student {
         Objects.equals(this.login, student.login) &&
         Objects.equals(this.name, student.name) &&
         Objects.equals(this.surname, student.surname) &&
-        Objects.equals(this.age, student.age);
+        Objects.equals(this.age, student.age) &&
+        Objects.equals(this.subjects,student.subjects);
   }
  public Student subjects() {
     this.subjects=subjects;
@@ -168,7 +169,7 @@ public class Student {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, login, name, surname, age);
+    return Objects.hash(id, login, name, surname, age,subjects);
   }
 
   @Override
@@ -177,8 +178,8 @@ public class Student {
     sb.append("class Student {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    login: ").append(toIndentedString(login)).append("\n");
-    sb.append("    firstName: ").append(toIndentedString(name)).append("\n");
-    sb.append("    middleName: ").append(toIndentedString(surname)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    surname: ").append(toIndentedString(surname)).append("\n");
     sb.append("    age: ").append(toIndentedString(age)).append("\n");
     sb.append("    subjects: ").append(toIndentedString(subjects)).append("\n");
     sb.append("}");
